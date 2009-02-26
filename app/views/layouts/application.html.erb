@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+	<title><%= "PVR Hotels" %></title>
+	<%= stylesheet_link_tag 'application' %>
+	<%= stylesheet_link_tag 'style' %>
+	<%= stylesheet_link_tag 'lightbox' %>
+	<%= javascript_include_tag :all, :cache => true %>
+  </head>
+  <body>
+    <div id="container">
+			<div id='encabezado'></div>
+      
+		<div id='barra_navegacion'>
+			<ul>
+					
+				<li><% if logged_in? %>
+					<%= link_to "Logout", logout_path %>	
+					<% else %>
+					<%= link_to "Log In", login_path %>
+					<% end %>
+				</li>
+			</ul>
+		</div>
+<div class="clear"></div>
+<div id="messages"><%- flash.each do |name, msg| -%>
+    <%= content_tag :div, msg, :id => "flash_#{name}" %>
+  <%- end -%></div>
+<div class="clear"></div>
+<div id="centro">      
+     <div id="cont"> <%= yield %></div>
+
+</div>
+<div class="clear"></div>
+<div id="pie">
+	<div id="pie_cont">
+		<p>Site under construction</p>
+	</div>
+</div>
+<div class="clear"></div>
+<div id="final"></div>
+    </div>
+  </body>
+</html>
+
+

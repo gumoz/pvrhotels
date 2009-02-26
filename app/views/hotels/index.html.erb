@@ -1,0 +1,39 @@
+<h2>Lista hoteles registrados</h2>
+
+<table border="0" cellspacing="3" cellpadding="1" align="center">
+  <tr>
+    <th class="titulo_columna">Name</th>
+    <th class="titulo_columna">Units</th>
+    <th class="titulo_columna">Website</th>
+    <th class="titulo_columna">Units description</th>
+    <th class="titulo_columna">Address1</th>
+    <th class="titulo_columna">Address2</th>
+    <th class="titulo_columna">Latitude</th>
+    <th class="titulo_columna">Longitude</th>
+  </tr>
+
+<% for hotel in @hotels %>
+  <tr>
+	<td align="left" width="100"><%=h hotel.name %></td>
+    <td align="center" width="10"><%=h hotel.units %></td>
+    <td align="center" width="10"><%=h hotel.website %></td>
+    <td align="center" width="50"><%=h hotel.units_description %></td>
+    <td align="center" width="10"><%=h hotel.address1 %></td>
+    <td align="center" width="10"><%=h hotel.address2 %></td>
+    <td align="center" width="10"><%=h hotel.latitude %></td>
+    <td align="center" width="10"><%=h hotel.longitude %></td>
+    <td align="center"><%= link_to 'Show', hotel %></td>
+	<% if logged_in? %>
+    <td align="center"><%= link_to 'Edit', edit_hotel_path(hotel) %></td>
+    <td align="center"><%= link_to 'Destroy', hotel, :confirm => 'Are you sure?', :method => :delete %></td>
+	<%- end -%>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<% if logged_in? %>
+<%= link_to 'New hotel', new_hotel_path %> | 
+<% end  %>
+<%= link_to 'Back', regresar %>
+

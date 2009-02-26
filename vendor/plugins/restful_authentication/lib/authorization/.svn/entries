@@ -1,0 +1,40 @@
+8
+
+dir
+11
+http://macguillermo@ixaya.com/svn/pvr/trunk/vendor/plugins/restful_authentication/lib/authorization
+http://macguillermo@ixaya.com/svn/pvr
+
+
+
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+
+
+svn:special svn:externals svn:needs-lock
+
+aasm_roles.rb
+file
+
+
+
+
+2009-02-11T14:56:25.000000Z
+8726fdd82eeea3c3c27bf0354cca9346
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+
+stateful_roles.rb
+file
+
+
+
+
+2009-02-11T14:56:25.000000Z
+df869884954b2f2667ccb5877323b0cd
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+

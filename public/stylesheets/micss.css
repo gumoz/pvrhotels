@@ -1,0 +1,183 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td{
+margin-top: 0pt;
+margin-right: 0pt;
+margin-bottom: 0pt;
+margin-left: 0pt;
+padding-top: 0pt;
+padding-right: 0pt;
+padding-bottom: 0pt;
+padding-left: 0pt;
+border-top-width: 0pt;
+border-right-width-value: 0pt;
+border-right-width-ltr-source: physical;
+border-right-width-rtl-source: physical;
+border-bottom-width: 0pt;
+border-left-width-value: 0pt;
+border-left-width-ltr-source: physical;
+border-left-width-rtl-source: physical;
+border-top-style: none;
+border-right-style-value: none;
+border-right-style-ltr-source: physical;
+border-right-style-rtl-source: physical;
+border-bottom-style: none;
+border-left-style-value: none;
+border-left-style-ltr-source: physical;
+border-left-style-rtl-source: physical;
+border-top-color: -moz-use-text-color;
+border-right-color-value: -moz-use-text-color;
+border-right-color-ltr-source: physical;
+border-right-color-rtl-source: physical;
+border-bottom-color: -moz-use-text-color;
+border-left-color-value: -moz-use-text-color;
+border-left-color-ltr-source: physical;
+border-left-color-rtl-source: physical;
+font-weight: inherit;
+font-style: inherit;
+font-size: 100%;
+font-family: inherit;
+vertical-align: baseline;
+}
+caption, th, td
+{
+text-align: left;
+font-weight: normal;
+}
+table, td, th{
+vertical-align: middle;
+}
+
+th, td{
+padding-top: 4px;
+padding-right: 10px;
+padding-bottom: 4px;
+padding-left: 5px;
+}
+
+#contenedor_de_pagina {
+    width: 900px;
+    margin: 10px auto;
+    padding: 0;
+    border: 1px solid #999;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#contenido_general {
+    padding: 20px 10px;
+}
+#encabezado {
+    background-color: #006699;
+    margin: 0;
+    padding: 0;
+}
+#encabezado p {
+    padding: 20px 10px;
+    font-size: 24px;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#pie_pagina {
+    background-color: #999;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    clear:both;
+    border-top: 2px solid #333;
+    text-align: center;
+}
+#pie_pagina p, #pie_pagina a {
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    font-weight:bold;
+    margin: 0;
+    padding: 2px;
+}
+
+/* Navigation Bar */
+
+#barra_navegacion ul {
+    padding: 0;
+    margin: 0;
+    background-color: #999;
+    color: White;
+    float: left;
+    width: 100%;
+    list-style: none;
+    font-weight: bold;
+    font-size: 13px;
+    border-bottom: 2px solid #333;
+}
+#barra_navegacion ul li { 
+    display: inline;
+    color: White;
+    float: left;
+    border-right: 1px solid #333;
+    font-family: arial, helvetica, sans-serif;
+}
+#barra_navegacion ul li a {
+    padding: 0.2em 0.7em;
+    background-color: #999; 
+    color: White;
+    text-decoration: none;
+    float:left;
+}
+#barra_navegacion ul li a:hover {
+    background-color: #333;
+    color: #fff;
+}
+#barra_navegacion #actual a{
+	background-color: #000;
+}
+/* Estilo creado por gustavo */
+
+#sentimos{
+	font-family: arial, helvetica, sans-serif;
+	font-size:22px;
+	color:#173768;
+	line-height:16px;
+}
+.titulo_columna{
+	background-color: #006699;
+	color: white;
+	font-size:13px;
+}
+#agrupa_columnas td {
+	font-family:'Lucida Grande', arial, helvetica, sans-serif;
+	font-size:12px;
+	color:#173768;
+	line-height:16px;
+}
+#subnavegacion {
+	width: 200px;
+	float: left;
+	border-right: 1px solid black;
+	margin-right: 20px;
+}
+
+.flickr_pagination {
+  text-align: center;
+  padding: .3em; }
+  .flickr_pagination a, .flickr_pagination span {
+    padding: .2em .5em; }
+  .flickr_pagination span.disabled {
+    color: #AAA; }
+  .flickr_pagination span.current {
+    font-weight: bold;
+    color: #FF0084; }
+  .flickr_pagination a {
+    border: 1px solid #DDDDDD;
+    color: #0063DC;
+    text-decoration: none; }
+    .flickr_pagination a:hover, .flickr_pagination a:focus {
+      border-color: #003366;
+      background: #0063DC;
+      color: white; }
+  .flickr_pagination .page_info {
+    color: #aaa;
+    padding-top: .8em; }
+  .flickr_pagination .prev_page, .flickr_pagination .next_page {
+    border-width: 2px; }
+  .flickr_pagination .prev_page {
+    margin-right: 1em; }
+  .flickr_pagination .next_page {
+    margin-left: 1em; }

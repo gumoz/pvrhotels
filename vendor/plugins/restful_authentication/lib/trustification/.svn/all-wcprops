@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/lib/trustification
+END
+email_validation.rb
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/lib/trustification/email_validation.rb
+END

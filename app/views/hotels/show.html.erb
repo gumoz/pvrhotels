@@ -1,0 +1,104 @@
+<p>
+  <b>Name:</b>
+  <%=h @hotel.name %>
+</p>
+
+<p>
+  <b>Units:</b>
+  <%=h @hotel.units %>
+</p>
+
+<p>
+  <b>Website:</b>
+  <%=h @hotel.website %>
+</p>
+
+<p>
+  <b>Large description:</b>
+  <%=h @hotel.large_description %>
+</p>
+
+<p>
+  <b>Small description:</b>
+  <%=h @hotel.small_description %>
+</p>
+
+<p>
+  <b>Tiny description:</b>
+  <%=h @hotel.tiny_description %>
+</p>
+
+<p>
+  <b>Units description:</b>
+  <%=h @hotel.units_description %>
+</p>
+
+<p>
+  <b>Address1:</b>
+  <%=h @hotel.address1 %>
+</p>
+
+<p>
+  <b>Address2:</b>
+  <%=h @hotel.address2 %>
+</p>
+
+<p>
+  <b>Latitude:</b>
+  <%=h @hotel.latitude %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%=h @hotel.longitude %>
+</p>
+
+<h3 style="clear: both;">Check the photos:</h3>
+
+<% if @hotel.photos  %>
+
+<div class="section">
+Add a new photo to the Hotel: <%= @hotel.name %>
+
+	<% @hotel.photos.each do |photo| %>
+		
+	<div class="thumbnail">
+		<%= lightbox_image_tag(photo.public_filename(:thumb), photo.public_filename , {:class=>"images"}, :title => photo.title, :rel => "lightbox[photos]") %>	
+		<% if logged_in? %>
+	    <div>  
+	      <%= link_to 'delete', hotel_photo_url(@hotel, photo), :confirm => 'Are you shure?', :method => :delete %>
+	    </div>
+		<% end %>
+	</div>
+	
+	<% end %>
+</div>
+<% end %>
+
+<% if logged_in? %>
+<% form_for(:photo, :url => hotel_photos_url(@hotel),  :html => { :multipart => true }) do |f| %>
+	
+	<p>
+		<b>Titulo</b><br>
+		<%= f.text_field :title %></p>
+		
+	</p>
+	
+	<p>
+		Select photo:
+		<%= f.file_field :uploaded_data %>
+		El máximo de tamaño por foto es de: 5000 KB
+	</p>
+	
+	<p>
+		<%= f.submit "Add Photo" %>
+	</p>
+	
+<% end %>
+<% end %>
+
+
+<%= link_to "Back", regresar %>
+
+<%= link_to 'Edit', edit_hotel_path(@hotel) %> |
+<%= link_to 'Back', hotels_path %>

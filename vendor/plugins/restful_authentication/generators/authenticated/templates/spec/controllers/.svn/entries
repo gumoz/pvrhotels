@@ -1,0 +1,64 @@
+8
+
+dir
+11
+http://macguillermo@ixaya.com/svn/pvr/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/spec/controllers
+http://macguillermo@ixaya.com/svn/pvr
+
+
+
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+
+
+svn:special svn:externals svn:needs-lock
+
+users_controller_spec.rb
+file
+
+
+
+
+2009-02-11T14:56:25.000000Z
+4bfdc69f3567cf9998436b210c3ab95d
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+
+authenticated_system_spec.rb
+file
+
+
+
+
+2009-02-11T14:56:25.000000Z
+96fd4fe380b3c0c9031880390bc00327
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+
+sessions_controller_spec.rb
+file
+
+
+
+
+2009-02-11T14:56:25.000000Z
+fb273b799f23e9be0475ec0d798c6979
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+
+access_control_spec.rb
+file
+
+
+
+
+2009-02-11T14:56:25.000000Z
+48ac558f70d81e864dc328d0bff5eb4d
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+

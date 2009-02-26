@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/Rakefile
+END
+restful-authentication.gemspec
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/restful-authentication.gemspec
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/TODO
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/init.rb
+END
+CHANGELOG
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/CHANGELOG
+END
+install.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/install.rb
+END
+README.textile
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/README.textile
+END

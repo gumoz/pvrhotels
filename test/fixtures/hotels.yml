@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  units: 1
+  website: MyString
+  large_description: MyText
+  small_description: MyText
+  tiny_description: MyText
+  units_description: MyText
+  address1: MyString
+  address2: MyString
+  latitud: 9.99
+  longitude: 9.99
+
+two:
+  name: MyString
+  units: 1
+  website: MyString
+  large_description: MyText
+  small_description: MyText
+  tiny_description: MyText
+  units_description: MyText
+  address1: MyString
+  address2: MyString
+  latitud: 9.99
+  longitude: 9.99

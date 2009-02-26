@@ -1,0 +1,115 @@
+8
+
+dir
+11
+http://macguillermo@ixaya.com/svn/pvr/trunk/vendor/plugins/restful_authentication
+http://macguillermo@ixaya.com/svn/pvr
+
+
+
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+
+
+svn:special svn:externals svn:needs-lock
+
+Rakefile
+file
+
+
+
+
+2009-02-11T14:56:25.000000Z
+baadaf99cec7584a6d5b523c8b419d1e
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+
+restful-authentication.gemspec
+file
+
+
+
+
+2009-02-11T14:56:25.000000Z
+f1030c2d205c6c0772e16d5bf49abb5f
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+
+init.rb
+file
+
+
+
+
+2009-02-11T14:56:25.000000Z
+edb7327a6f6d1dfb6db66d9996d39a89
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+
+tasks
+dir
+
+TODO
+file
+
+
+
+
+2009-02-11T14:56:25.000000Z
+86e849e95ebfc5040161405c6cfe98f3
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+
+lib
+dir
+
+CHANGELOG
+file
+
+
+
+
+2009-02-11T14:56:25.000000Z
+a8629c79b059e6e4d51f5d4f711cd231
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+
+install.rb
+file
+
+
+
+
+2009-02-11T14:56:25.000000Z
+3773dce53854a282602d79a631a1ff8a
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+
+notes
+dir
+
+generators
+dir
+
+rails
+dir
+
+README.textile
+file
+
+
+
+
+2009-02-11T14:56:25.000000Z
+948ed037647960251b14286950b4eef3
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+

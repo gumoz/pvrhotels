@@ -1,0 +1,22 @@
+<div id="login_window">
+	<div id="title_login">
+		<p>Please enter your login information:</p></div>
+
+<% form_tag session_path do -%>
+<p><%= label_tag 'Login:' %><br />
+<%= text_field_tag 'login', @login %></p>
+
+<p><%= label_tag 'Password:' %><br/>
+<%= password_field_tag 'password', nil %></p>
+
+<!-- Uncomment this if you want this functionality
+<p><%= label_tag 'remember_me', 'Remember me' %>
+<%= check_box_tag 'remember_me', '1', @remember_me %></p>
+-->
+
+<p><%= submit_tag 'Login' %></p>
+<% end -%>
+
+
+<%= javascript_tag "$('login').focus()" %>
+</div>

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/stories
+END
+rest_auth_stories_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/stories/rest_auth_stories_helper.rb
+END
+rest_auth_stories.rb
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/stories/rest_auth_stories.rb
+END

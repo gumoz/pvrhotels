@@ -1,0 +1,40 @@
+8
+
+dir
+11
+http://macguillermo@ixaya.com/svn/pvr/trunk/vendor/plugins/restful_authentication/lib/authentication
+http://macguillermo@ixaya.com/svn/pvr
+
+
+
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+
+
+svn:special svn:externals svn:needs-lock
+
+by_cookie_token.rb
+file
+
+
+
+
+2009-02-11T14:56:25.000000Z
+b25c149b6670b83083134973ed3c40e5
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+
+by_password.rb
+file
+
+
+
+
+2009-02-11T14:56:25.000000Z
+2c89ac2840059470f6a7c8dde9b9c1cf
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+

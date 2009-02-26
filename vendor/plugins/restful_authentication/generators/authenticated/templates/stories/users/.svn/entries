@@ -1,0 +1,40 @@
+8
+
+dir
+11
+http://macguillermo@ixaya.com/svn/pvr/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/stories/users
+http://macguillermo@ixaya.com/svn/pvr
+
+
+
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+
+
+svn:special svn:externals svn:needs-lock
+
+sessions.story
+file
+
+
+
+
+2009-02-11T14:56:25.000000Z
+063f46e10bd95340ec5f86f82d23a28d
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+
+accounts.story
+file
+
+
+
+
+2009-02-11T14:56:25.000000Z
+85b5ed5646a7cd41672e12d10760cefc
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+

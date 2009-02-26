@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/stories/steps
+END
+ra_response_steps.rb
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/stories/steps/ra_response_steps.rb
+END
+ra_navigation_steps.rb
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/stories/steps/ra_navigation_steps.rb
+END
+ra_resource_steps.rb
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/stories/steps/ra_resource_steps.rb
+END
+user_steps.rb
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/stories/steps/user_steps.rb
+END

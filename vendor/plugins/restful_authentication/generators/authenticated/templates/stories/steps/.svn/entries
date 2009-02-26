@@ -1,0 +1,64 @@
+8
+
+dir
+11
+http://macguillermo@ixaya.com/svn/pvr/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/stories/steps
+http://macguillermo@ixaya.com/svn/pvr
+
+
+
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+
+
+svn:special svn:externals svn:needs-lock
+
+ra_response_steps.rb
+file
+
+
+
+
+2009-02-11T14:56:25.000000Z
+739c99c00151114bf3323cce1ceb5cb6
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+
+ra_navigation_steps.rb
+file
+
+
+
+
+2009-02-11T14:56:25.000000Z
+bcdf826aa3a4e15d37cd979acd33310b
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+
+ra_resource_steps.rb
+file
+
+
+
+
+2009-02-11T14:56:25.000000Z
+a94dd6d83bb294151f39fabac3cfe02f
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+
+user_steps.rb
+file
+
+
+
+
+2009-02-11T14:56:25.000000Z
+05d37603f2082aecc425e039a605895d
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+

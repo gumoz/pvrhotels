@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates
+END
+signup.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/signup.html.erb
+END
+helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/helper.rb
+END
+login.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/login.html.erb
+END
+authenticated_test_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/authenticated_test_helper.rb
+END
+signup_notification.erb
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/signup_notification.erb
+END
+controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/controller.rb
+END
+_model_partial.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/_model_partial.html.erb
+END
+authenticated_system.rb
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/authenticated_system.rb
+END
+observer.rb
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/observer.rb
+END
+migration.rb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/migration.rb
+END
+model_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/model_helper.rb
+END
+site_keys.rb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/site_keys.rb
+END
+model.rb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/model.rb
+END
+model_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/model_controller.rb
+END
+activation.erb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/activation.erb
+END
+model_helper_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/model_helper_spec.rb
+END
+mailer.rb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/mailer.rb
+END

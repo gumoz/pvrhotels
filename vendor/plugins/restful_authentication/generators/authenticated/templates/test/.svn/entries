@@ -1,0 +1,64 @@
+8
+
+dir
+11
+http://macguillermo@ixaya.com/svn/pvr/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/test
+http://macguillermo@ixaya.com/svn/pvr
+
+
+
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+
+
+svn:special svn:externals svn:needs-lock
+
+unit_test.rb
+file
+
+
+
+
+2009-02-11T14:56:25.000000Z
+c38326fddfca41d9410fee3919d091f1
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+
+functional_test.rb
+file
+
+
+
+
+2009-02-11T14:56:25.000000Z
+f085f2040d0397366e58bf1f488505ba
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+
+model_functional_test.rb
+file
+
+
+
+
+2009-02-11T14:56:25.000000Z
+1debc38349f4930246ab89558dfc00d4
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+
+mailer_test.rb
+file
+
+
+
+
+2009-02-11T14:56:25.000000Z
+3cb48065e2cfd566a5050a928aa6e552
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+

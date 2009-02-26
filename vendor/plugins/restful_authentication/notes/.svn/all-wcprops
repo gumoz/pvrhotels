@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/notes
+END
+AccessControl.txt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/notes/AccessControl.txt
+END
+Trustification.txt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/notes/Trustification.txt
+END
+SecurityPatterns.txt
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/notes/SecurityPatterns.txt
+END
+SecurityFramework.png
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/notes/SecurityFramework.png
+END
+RailsPlugins.txt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/notes/RailsPlugins.txt
+END
+SecurityFramework.graffle
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/notes/SecurityFramework.graffle
+END
+Tradeoffs.txt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/notes/Tradeoffs.txt
+END
+Authentication.txt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/notes/Authentication.txt
+END
+Authorization.txt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/notes/Authorization.txt
+END

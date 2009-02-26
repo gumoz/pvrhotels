@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/stories/users
+END
+sessions.story
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/stories/users/sessions.story
+END
+accounts.story
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/pvr/!svn/ver/11/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/stories/users/accounts.story
+END

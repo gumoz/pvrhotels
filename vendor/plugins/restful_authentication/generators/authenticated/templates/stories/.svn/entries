@@ -1,0 +1,47 @@
+8
+
+dir
+11
+http://macguillermo@ixaya.com/svn/pvr/trunk/vendor/plugins/restful_authentication/generators/authenticated/templates/stories
+http://macguillermo@ixaya.com/svn/pvr
+
+
+
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+
+
+svn:special svn:externals svn:needs-lock
+
+users
+dir
+
+rest_auth_stories_helper.rb
+file
+
+
+
+
+2009-02-11T14:56:25.000000Z
+bf05a427767ee29cce9a0d0b6a2f4426
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+
+rest_auth_stories.rb
+file
+
+
+
+
+2009-02-11T14:56:25.000000Z
+bc64373f0669a68e9a2952141290b9c1
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+has-props
+
+steps
+dir
+

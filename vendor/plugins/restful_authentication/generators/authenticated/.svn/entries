@@ -1,0 +1,46 @@
+8
+
+dir
+11
+http://macguillermo@ixaya.com/svn/pvr/trunk/vendor/plugins/restful_authentication/generators/authenticated
+http://macguillermo@ixaya.com/svn/pvr
+
+
+
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+
+
+svn:special svn:externals svn:needs-lock
+
+USAGE
+file
+
+
+
+
+2009-02-11T14:56:25.000000Z
+cdb2aed081ecd6e02941a4f298da3e72
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+
+lib
+dir
+
+authenticated_generator.rb
+file
+
+
+
+
+2009-02-11T14:56:25.000000Z
+2062ff98c22b28f62b2f788c355a3943
+2009-02-11T21:08:35.387452Z
+11
+macguillermo
+
+templates
+dir
+

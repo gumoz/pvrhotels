@@ -1,0 +1,26 @@
+<h2>Register Users</h2>
+
+<table border="0" cellspacing="3" cellpadding="1" align="center">
+  <tr>
+    <th class="titulo_columna">User</th>
+    <th class="titulo_columna">Email</th>
+  </tr>
+
+<% for user in @users %>
+  <tr>
+    <td align="left" width="200"><%=h user.login %></td>
+    <td align="center" width="200"><%=h user.email %></td>
+<% if ((current_user.login == "admin") || (current_user.login == user.login) || (current_user.login == "superadmin") ) %>
+    <td align="center"><%= link_to 'Edit', edit_user_path(user) %></td>
+    <td align="center"><%= link_to 'destroy', user, :confirm => "Are you sure that you want to delete #{user.login}?", :method => :delete %></td>
+	<% end %>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<% if (current_user.login == "administrador" || (current_user.login == "superadmin")) %>
+<%= link_to 'New user', new_user_path %> | 
+<% end %>
+<%= link_to 'Back', regresar %>
+<br />
