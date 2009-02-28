@@ -1,13 +1,21 @@
-<h1>New hotel</h1>
+<div id="col_izq">
+	<div id="window1">
+		<div id="title1"><p>New hotel</p></div>
 
 <% form_for(@hotel) do |f| %>
   <%= f.error_messages %>
 
 <%= render :partial => "form", :locals => {:f => f} %>
 
-  <p>
     <%= f.submit "Create" %>
-  </p>
 <% end %>
-
-<%= link_to 'Back', hotels_path %>
+</div></div>
+<div id="col_der">
+	<div class="window2">
+		<div class="title2"><p>Rooms Administration:</p></div>
+		<ul>
+			<li><%= link_to "Check Rooms", hotel_rooms_path(@hotel) %></li>
+			<li id="last"><%= link_to "Back", hotels_path %></li>
+		</ul>
+	</div>
+</div>
