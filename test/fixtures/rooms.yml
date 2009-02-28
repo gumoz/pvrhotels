@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  hotel: 
+  room_name: MyString
+  min_sleep: 1
+  max_sleep: 1
+  regular_rate_usd: 9.99
+  max_adults: 1
+  max_children: 1
+  room_description: MyText
+
+two:
+  hotel: 
+  room_name: MyString
+  min_sleep: 1
+  max_sleep: 1
+  regular_rate_usd: 9.99
+  max_adults: 1
+  max_children: 1
+  room_description: MyText

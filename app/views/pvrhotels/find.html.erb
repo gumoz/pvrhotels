@@ -1,0 +1,12 @@
+<% if !@hotels.blank? %>
+<ul>
+  <% for hotel in @hotels %>
+		<%= link_to image_tag(hotel.foto.url(:small), :size => "163x163"), producto %>
+		<div class="titulo_producto"><%= producto.nombre.capitalize %></div>
+		<!--div class="precio_producto">Precio: <%= number_to_currency(producto.precio_unidad) %></div-->
+  <% end %>
+</ul>
+<% else %>
+<h3>There is no Hotel under this option.</h3>
+<% end %>
+<%= link_to 'Hotels', :controller => "pvrhotels", :action => "index" %>

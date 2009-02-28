@@ -1,0 +1,36 @@
+<h1>Listing rooms</h1>
+<div id="col_izq">
+	<div id="window1">
+		<div id="title1"><p>Hotels Available:</p></div>
+<table cellspacing="1" cellpadding="1" id="tabla1">
+  <tr>
+	<th class="col1">Action</th>
+    <th class="col1">Room Name</th>
+    <th class="col1">Min sleep</th>
+    <th class="col1">Max sleep</th>
+    <th class="col1">Regular rate usd</th>
+  </tr>
+
+	<% for room in @rooms %>
+  <tr >
+	<td class="row1"><%= link_to 'Show', room %>|<%= link_to 'Edit', edit_room_path(room) %>|<%= link_to 'Destroy', room, :confirm => 'Are you sure?', :method => :delete %></td>
+	<td class="row1"><%=h room.room_name %></td>
+	<td class="row1"><%=h room.min_sleep %></td>
+	<td class="row1"><%=h room.max_sleep %></td>
+	<td class="row1"><%=h number_to_currency(room.regular_rate_usd) %></td>
+  </tr>
+<% end %>
+</table></div></div>
+
+
+<div id="col_der">
+	<div class="window2">
+		<div class="title2"><p>Property Administration:</p></div>
+		<ul>
+			<li><%= link_to 'New room', new_hotel_room_path %></li>
+			<li><%= link_to "Back to Hotel", hotel_path(@hotel) %></li>
+			<li><%= link_to "Back to All Hotels", hotels_path %></li>
+			<li id="last"><%= link_to 'Back to Admin', administrator_path %></li>	
+		</ul>
+	</div>
+</div>

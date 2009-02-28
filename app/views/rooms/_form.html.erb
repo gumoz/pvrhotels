@@ -1,0 +1,51 @@
+<p>
+  <%= f.label "Room Name" %>
+  <%= f.text_field :room_name %>
+</p>
+<p>
+  <%= f.label "Min Sleep" %>
+  <%= f.text_field :min_sleep %>
+</p>
+<p>
+  <%= f.label "Max Sleep" %>
+  <%= f.text_field :max_sleep %>
+</p>
+<p>
+  <%= f.label "Regular Rate USD" %>
+  <%= f.text_field :regular_rate_usd %>
+</p>
+<p>
+  <%= f.label "Max Adults" %>
+  <%= f.text_field :max_adults %>
+</p>
+<p>
+  <%= f.label "Max Children" %>
+  <%= f.text_field :max_children %>
+</p>
+
+<p>
+	<%= f.label "Room Type" %>
+	<%= f.select :room_type, [['Standard Room', 'standard_room'], ['Moderate', 'Moderate'],  ["Superior", "Superior"], ["Delux", "Delux"], ["Run of House", "run_of_house"], ["Junior Suite", "junior_suite"], ["Master Suite", "master_suite"], ["Studio", "Studio"]] %></p>
+	
+  
+</p>
+<p>
+	<%= f.label "Total Rooms" %>
+	<%= f.text_field :total_rooms %>
+  
+</p>
+
+<ul><p><b>Bed in the Room</b></p>
+	<li><p><%= f.label :double %>: <%= f.check_box :double %></p></li>
+	<li><p><%= f.label :king %>: <%= f.check_box :king %></p></li>
+	<li><p><%= f.label :murphy %>: <%= f.check_box :murphy %></p></li>
+	<li><p><%= f.label :queen %>: <%= f.check_box :queen %></p></li>
+	<li><p><%= f.label :rollaway %>: <%= f.check_box :rollaway %></p></li>
+	<li><p><%= f.label :sofa %>: <%= f.check_box :sofa %></p></li>
+	<li><p><%= f.label :twin %>: <%= f.check_box :twin %></p></li>
+</ul>
+
+<p>
+  <%= f.label "Room Description" %><br />
+  <%= f.text_area :room_description %>
+</p>

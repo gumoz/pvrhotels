@@ -1,0 +1,29 @@
+<div id="col_izq">
+	<div id="window1">
+		<div id="title1"><p>You are logged in as <%= current_user.login.capitalize %>:</p></div>
+		<p>This is the General information of the Site</p>
+		<ul>
+			<li>There are <%= @numhotels %> registered hotels.</li>
+			<li>There are <%= @users - 1 %> users signed in as administrators.</li>
+		</ul>
+	</div>
+</div>
+<div id="col_der">
+	<div class="window2">
+		<div class="title2"><p>Property Administration:</p></div>
+		<ul>
+			<li><%= link_to "Admin Hotels", hotels_path %></li>
+			<li id="last2"><%= link_to "Add new hotel", new_hotel_path %></li>
+		</ul>
+	</div>
+	<br />
+	<% if (current_user.login == 'admin' || current_user.login == 'superadmin') %>
+	<div class="window2">
+		<div class="title2"><p>Users Administration:</p></div>
+		<ul>
+			<li><%= link_to "Add new user", new_user_path %></li>
+			<li id="last3"><%= link_to "View users", users_path %></li>
+		</ul>
+	</div>
+	<%- end -%>
+</div>

@@ -1,0 +1,57 @@
+<p>
+  <b>Room name:</b>
+  <%=h @room.room_name %>
+</p>
+
+<p>
+  <b>Min sleep:</b>
+  <%=h @room.min_sleep %>
+</p>
+
+<p>
+  <b>Max sleep:</b>
+  <%=h @room.max_sleep %>
+</p>
+
+<p>
+  <b>Regular rate usd:</b>
+  <%=h number_to_currency(@room.regular_rate_usd) %>
+</p>
+
+<p>
+  <b>Max adults:</b>
+  <%=h @room.max_adults %>
+</p>
+
+<p>
+  <b>Max children:</b>
+  <%=h @room.max_children %>
+</p>
+<p><b>Bed(s) in the Room</b></p>
+<ul>
+	<% if @room.double? %><li><p>Double</p></li><% end %>
+	<% if @room.king? %><li><p>King</p></li><% end %>
+	<% if @room.murphy? %><li><p>Murphy</p></li><% end %>
+	<% if @room.queen? %><li><p>Queen</p></li><% end %>
+	<% if @room.rollaway? %><li><p>Rollaway</p></li><% end %>
+	<% if @room.sofa? %><li><p>Sofa</p></li><% end %>
+	<% if @room.twin? %><li><p>Twin</p></li><% end %>
+</ul>
+
+<p>
+  <b>Room description:</b>
+  <%=h @room.room_description %>
+</p>
+<p>
+	<b>Room Type:</b>
+	<%=h @room.room_type %>
+</p>
+<p>
+	<b>Total Rooms:</b>
+	<%= h @room.total_rooms %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_room_path(@room) %> |
+<%= link_to 'Back', hotel_rooms_path(@room) %>
