@@ -349,6 +349,13 @@ a {
 	color:black;
 	font-size:12px;
 }
+.cuadros2{
+	margin:5px 3px 5px 5px;
+	padding:5px 5px 5px 10px;
+	float:left;
+	color:black;
+	font-size:12px;
+}
 .fixbot{
 	margin: 10px 0 20px 45px ;
 }

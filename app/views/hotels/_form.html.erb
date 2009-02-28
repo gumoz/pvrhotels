@@ -1,45 +1,48 @@
-<p>
+<div class="cuadros2">
   <%= f.label "Hotel Name" %><br />
-  <%= f.text_field :name %>
-</p>
-<p>
-  <%= f.label :units %><br />
-  <%= f.text_field :units %>
-</p>
-<p>
-  <%= f.label :hotel_plan %><br />
-	<%= f.select :hotel_plan, [['European Plan', 'European Plan'], ['Luxury Vacations', 'Luxury Vacations'],  ["Bed and Breakfast", "Bed and Breakfast"], ["All Inclusive", "All Inclusive"]] %></p>
-<p>
+  <%= f.text_field :name %></div>
+
+<div class="cuadros2">  <%= f.label "Units" %><br />
+  <%= f.text_field :units, :size=>7 %></div>
+<div class="cuadros2"> 
+  <%= f.label "Hotel Plan:" %><br />
+	<%= f.select :hotel_plan, [['European Plan', 'European Plan'], ['Luxury Vacations', 'Luxury Vacations'],  ["Bed and Breakfast", "Bed and Breakfast"], ["All Inclusive", "All Inclusive"]] %></div>
+<div class="clear"></div>
+
+<div class="cuadros2">
   <%= f.label :hotel_stars %><br />
-<%= f.select :hotel_stars, [['One Star', 'One Star'], ['Two Stars', 'Two Stars'],  ["Three Stars", "Three Stars"], ["Four Stars", "Four Stars"], ["Five Stars", "Five Stars"], ["Grand Turismo", "Grand Turismo"], ["Boutique", "Boutique"], ["Not Rated", "Not Rated"]] %></p>
-<p>
+<%= f.select :hotel_stars, [['One Star', 'One Star'], ['Two Stars', 'Two Stars'],  ["Three Stars", "Three Stars"], ["Four Stars", "Four Stars"], ["Five Stars", "Five Stars"], ["Grand Turismo", "Grand Turismo"], ["Boutique", "Boutique"], ["Not Rated", "Not Rated"]] %></div>
+<div class="cuadros2">
   <%= f.label :best_for %><br />
 	<%= f.select :best_for, [['Families', 'Families'], ['Couples', 'Couples'],  ["Solo Travellers", "Solo Travellers"], ["Senior Travellers", "Senior Travellers"], ["Gay Travel", "Gay Travel"]] %>
-</p>
-<p>
+</div>
+<div class="cuadros2">
   <%= f.label :location_area %><br />
-	<%= f.select :location_area, [["Amapas - Conchas Chinas", "Amapas - Conchas Chinas"], ["Costalegre", "Costalegre"], ["Bucerias - La Cruz", "Bucerias - La Cruz"],  ["El Centro", "El Centro"], ["Hotel Zone", "Hotel Zone"], ["Marina Vallarta", "Marina Vallarta"], ["North Shore", "North Shore"], ["Nuevo Vallarta - Flamingos", "Nuevo Vallarta - Flamingos"], ["Riviera Nayarit", "Riviera Nayarit"], ["South Shore", "South Shore"]] %></p>
-<p>
+	<%= f.select :location_area, [["Amapas - Conchas Chinas", "Amapas - Conchas Chinas"], ["Costalegre", "Costalegre"], ["Bucerias - La Cruz", "Bucerias - La Cruz"],  ["El Centro", "El Centro"], ["Hotel Zone", "Hotel Zone"], ["Marina Vallarta", "Marina Vallarta"], ["North Shore", "North Shore"], ["Nuevo Vallarta - Flamingos", "Nuevo Vallarta - Flamingos"], ["Riviera Nayarit", "Riviera Nayarit"], ["South Shore", "South Shore"]] %></div>
+<div class="cuadros2">
   <%= f.label :hotel_status %><br />
 	<%= f.select :hotel_status, [['Active', 'Active'], ['Not Active', 'Not Active'],  ["Cancelled", "Cancelled"], ["On Hold", "On Hold"], ["Closed", "Closed"]] %>
-</p>
-
-<p>
+</div>
+<div class="clear"></div>
+<div class="cuadros2">
   <%= f.label :website %><br />
   <%= f.text_field :website %>
-</p>
-<p>
+</div>
+<div class="clear"></div>
+<div class="cuadros2">
   <%= f.label :large_description %><br />
-  <%= f.text_area :large_description %>
-</p>
-<p>
+  <%= f.text_area :large_description, :size=>'73x18' %>
+</div>
+<div class="clear"></div>
+<div class="cuadros2">
   <%= f.label :small_description %><br />
-  <%= f.text_area :small_description %>
-</p>
-<p>
+  <%= f.text_area :small_description, :size=>'34x10' %>
+</div>
+<div class="cuadros2">
   <%= f.label :tiny_description %><br />
-  <%= f.text_area :tiny_description %>
-</p>
+  <%= f.text_area :tiny_description, :size=>'34x10' %>
+</div>
+<div class="clear"></div>
 <p>
   <%= f.label :units_description %><br />
   <%= f.text_field :units_description %>
