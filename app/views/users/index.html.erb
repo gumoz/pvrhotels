@@ -1,26 +1,43 @@
-<h2>Register Users</h2>
+<div id="col_izq"><div id="window1">
+	<div id="title1"><p>Administration of Users:</p></div>
 
-<table border="0" cellspacing="3" cellpadding="1" align="center">
+<table cellspacing="1" cellpadding="1" id="tabla1">
   <tr>
-    <th class="titulo_columna">User</th>
-    <th class="titulo_columna">Email</th>
+    <th class="col1">Action</th>
+    <th class="col1">User</th>
+    <th class="col1">Email</th>
   </tr>
+		<% for user in @users %>
+		  <tr>
+			<% if ((current_user.login == "admin") || (current_user.login == user.login) || (current_user.login == "superadmin") ) %>
+				<td class="row1"><%= link_to 'Edit', edit_user_path(user) %> | <%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %><%- end -%>
+				</td>
+		    <td class="row1"><%=h user.login %></td>
+		    <td class="row1"><%=h user.email %></td>
+		  </tr>
+		<% end %>
+		</table>
+	</div>
+</div>
 
-<% for user in @users %>
-  <tr>
-    <td align="left" width="200"><%=h user.login %></td>
-    <td align="center" width="200"><%=h user.email %></td>
-<% if ((current_user.login == "admin") || (current_user.login == user.login) || (current_user.login == "superadmin") ) %>
-    <td align="center"><%= link_to 'Edit', edit_user_path(user) %></td>
-    <td align="center"><%= link_to 'destroy', user, :confirm => "Are you sure that you want to delete #{user.login}?", :method => :delete %></td>
+
+<div id="col_der">
+	<div class="window2">
+		<div class="title2"><p>Property Administration:</p></div>
+		<ul>
+			<li><%= link_to "Admin Hotels", hotels_path %></li>
+			<li id="last2"><%= link_to "Add new hotel", new_hotel_path %></li>
+		</ul>
+	</div>
+	<br />
+	<% if (current_user.login == "admin" || (current_user.login == "superadmin")) %>
+	<div class="window2">
+		<div class="title2"><p>Users Administration:</p></div>
+		<ul>
+			<li><%= link_to 'New user', new_user_path %></li>
+			<li id="last"><%= link_to "Back", administrator_path %></li>
+		</ul>
+	</div>
 	<% end %>
-  </tr>
-<% end %>
-</table>
+</div>
 
-<br />
-<% if (current_user.login == "administrador" || (current_user.login == "superadmin")) %>
-<%= link_to 'New user', new_user_path %> | 
-<% end %>
-<%= link_to 'Back', regresar %>
-<br />

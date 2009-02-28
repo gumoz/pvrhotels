@@ -1,22 +1,44 @@
-<h2>Edit User</h2>
+<div id="col_izq"><div id="window1">
+	<div id="title1"><p>Edit User</p></div>
 <%= error_messages_for :user %>
 
 <% form_for @user do |f| -%>
 
-<p><%= label_tag 'login' %><br/>
-<%= f.text_field :login %></p>
+<div class="cuadros"><div><%= label_tag 'Login:' %></div><br/>
+<%= f.text_field :login %></div>
 
-<p><%= label_tag 'email' %><br/>
-<%= f.text_field :email %></p>
+<div class="cuadros"><div><%= label_tag 'Email:' %></div><br/>
+<%= f.text_field :email %></div>
 
-<p><%= label_tag "contraseña" %><br/>
-<%= f.password_field :password %></p>
+<div class="cuadros"><div><%= label_tag "Password:" %></div><br/>
+<%= f.password_field :password %></div>
 
-<p><%= label_tag 'password_confirmation', "confirmar contraseña" %><br/>
-<%= f.password_field :password_confirmation %></p>
-
-	<p><%= submit_tag 'Update' %></p>
+<div class="cuadros"><div><%= label_tag 'password_confirmation', "Password confirmation:" %></div><br/>
+<%= f.password_field :password_confirmation %></div>
+<div class="clear"></div>
+	<div class="fixbot"><%= submit_tag 'Update' %></div>
 <% end -%>
-<p><%= link_to 'Regresar', regresar %></p>
 
 <%= javascript_tag "$('user_login').focus()" %>
+
+</div>
+</div>
+<div id="col_der">
+	<div class="window2">
+		<div class="title2"><p>Property Administration:</p></div>
+		<ul>
+			<li><%= link_to "Admin Hotels", hotels_path %></li>
+			<li id="last2"><%= link_to "Add new hotel", new_hotel_path %></li>
+		</ul>
+	</div>
+	<br />
+	<% if (current_user.login == 'admin' || current_user.login == 'superadmin') %>
+	<div class="window2">
+		<div class="title2"><p>Users Administration:</p></div>
+		<ul>
+			<li><%= link_to "Add new user", new_user_path %></li>
+			<li id="last3"><%= link_to "Back", users_path %></li>
+		</ul>
+	</div>
+	<%- end -%>
+</div>

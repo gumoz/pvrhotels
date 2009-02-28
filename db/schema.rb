@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090226070010) do
+ActiveRecord::Schema.define(:version => 20090226082434) do
 
   create_table "hotels", :force => true do |t|
     t.string   "name"
@@ -72,6 +72,11 @@ ActiveRecord::Schema.define(:version => 20090226070010) do
     t.boolean  "front_desk_24_hours"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "hotel_plan"
+    t.string   "hotel_stars"
+    t.string   "best_for"
+    t.string   "location_area"
+    t.string   "hotel_status"
   end
 
   create_table "photos", :force => true do |t|
@@ -84,6 +89,28 @@ ActiveRecord::Schema.define(:version => 20090226070010) do
     t.string   "content_type"
     t.string   "filename"
     t.string   "thumbnail"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "rooms", :force => true do |t|
+    t.integer  "hotel_id"
+    t.string   "room_name"
+    t.integer  "min_sleep"
+    t.integer  "max_sleep"
+    t.decimal  "regular_rate_usd"
+    t.integer  "max_adults"
+    t.integer  "max_children"
+    t.text     "room_description"
+    t.string   "room_type"
+    t.integer  "total_rooms"
+    t.boolean  "double"
+    t.boolean  "king"
+    t.boolean  "murphy"
+    t.boolean  "queen"
+    t.boolean  "rollaway"
+    t.boolean  "sofa"
+    t.boolean  "twin"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

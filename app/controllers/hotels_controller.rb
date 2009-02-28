@@ -1,5 +1,5 @@
 class HotelsController < ApplicationController
-  before_filter :login_required, :except => [:show, :index]  
+  before_filter :login_required 
   
   # GET /hotels
   # GET /hotels.xml
@@ -22,6 +22,10 @@ class HotelsController < ApplicationController
       format.xml  { render :xml => @hotel }
     end
   end
+  
+  def find
+     @hotels = Hotel.find(:all, :conditions => ["name LIKE ?", '%' + params[:hotel] + '%']).paginate :per_page => 10, :page => params[:page]
+   end
 
   # GET /hotels/new
   # GET /hotels/new.xml

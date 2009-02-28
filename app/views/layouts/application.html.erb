@@ -12,17 +12,21 @@
     <div id="container">
 			<div id='encabezado'></div>
       
-		<div id='barra_navegacion'>
-			<ul>
-					
-				<li><% if logged_in? %>
-					<%= link_to "Logout", logout_path %>	
+			<div id='barra_navegacion'>
+				<ul>
+					<li><% if !logged_in? %>
+						<%= link_to "Log In", login_path %>
 					<% else %>
-					<%= link_to "Log In", login_path %>
+						<%= link_to "Logout", logout_path %>	
+					<li>|</li>
+					<li><%= link_to "Edit my profile", edit_user_path(current_user.id) %></li>
+					<li>|</li>
+					<li><%= link_to "Site Administration", administrator_path %></li>
+					<li>|</li>
 					<% end %>
-				</li>
-			</ul>
-		</div>
+					<li><%= link_to "Home", root_path %></li>
+				</ul>
+			</div>
 <div class="clear"></div>
 <div id="messages"><%- flash.each do |name, msg| -%>
     <%= content_tag :div, msg, :id => "flash_#{name}" %>

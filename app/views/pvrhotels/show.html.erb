@@ -1,2 +1,98 @@
-<h1>Pvrhotels#show</h1>
-<p>Find me in app/views/pvrhotels/show.html.erb</p>
+<p>
+  <b>Name:</b>
+  <%=h @hotel.name %>
+</p>
+
+<p>
+  <b>Units:</b>
+  <%=h @hotel.units %>
+</p>
+
+<p>
+  <b>Hotel plan:</b>
+  <%=h @hotel.hotel_plan %>
+</p>
+
+<p>
+  <b>Hotel stars:</b>
+  <%=h @hotel.hotel_stars %>
+</p>
+
+<p>
+  <b>Best for:</b>
+  <%=h @hotel.best_for %>
+</p>
+
+<p>
+  <b>Location area:</b>
+  <%=h @hotel.location_area %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%=h @hotel.hotel_status %>
+</p>
+
+<p>
+  <b>Website:</b>
+  <%=h @hotel.website %>
+</p>
+
+<p>
+  <b>Large description:</b>
+  <%=h @hotel.large_description %>
+</p>
+
+<p>
+  <b>Small description:</b>
+  <%=h @hotel.small_description %>
+</p>
+
+<p>
+  <b>Tiny description:</b>
+  <%=h @hotel.tiny_description %>
+</p>
+
+<p>
+  <b>Units description:</b>
+  <%=h @hotel.units_description %>
+</p>
+
+<p>
+  <b>Address1:</b>
+  <%=h @hotel.address1 %>
+</p>
+
+<p>
+  <b>Address2:</b>
+  <%=h @hotel.address2 %>
+</p>
+
+<p>
+  <b>Latitude:</b>
+  <%=h @hotel.latitude %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%=h @hotel.longitude %>
+</p>
+
+<h3 style="clear: both;">Check the photos:</h3>
+
+<% if @hotel.photos  %>
+
+<div class="section">
+Add a new photo to the Hotel: <%= @hotel.name %>
+
+	<% @hotel.photos.each do |photo| %>
+		
+	<div class="thumbnail">
+		<%= lightbox_image_tag(photo.public_filename(:thumb), photo.public_filename , {:class=>"images"}, :title => photo.title, :rel => "lightbox[photos]") %>	
+	</div>
+	
+	<% end %>
+</div>
+<% end %>
+
+<%= link_to 'Back', regresar %>

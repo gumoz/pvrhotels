@@ -1,3 +1,16 @@
+
+<div id="col_der">
+	<div class="window2">
+		<div class="title2"><p>Rooms Administration:</p></div>
+		<ul>
+			<li><%= link_to "Check Rooms", hotel_rooms_path(@hotel) %></li>
+			<li><%= link_to 'Edit Hotel', edit_hotel_path(@hotel) %></li>
+			<li><%= link_to "Back to Hotels", hotels_path %></li>
+			<li id="last"><%= link_to 'Back to Admin', administrator_path %></li>
+		</ul>
+	</div>
+</div>
+
 <p>
   <b>Name:</b>
   <%=h @hotel.name %>
@@ -6,6 +19,31 @@
 <p>
   <b>Units:</b>
   <%=h @hotel.units %>
+</p>
+
+<p>
+  <b>Hotel plan:</b>
+  <%=h @hotel.hotel_plan %>
+</p>
+
+<p>
+  <b>Hotel stars:</b>
+  <%=h @hotel.hotel_stars %>
+</p>
+
+<p>
+  <b>Best for:</b>
+  <%=h @hotel.best_for %>
+</p>
+
+<p>
+  <b>Location area:</b>
+  <%=h @hotel.location_area %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%=h @hotel.hotel_status %>
 </p>
 
 <p>
@@ -87,7 +125,7 @@ Add a new photo to the Hotel: <%= @hotel.name %>
 	<p>
 		Select photo:
 		<%= f.file_field :uploaded_data %>
-		El máximo de tamaño por foto es de: 5000 KB
+		El máximo de tamaño por foto es de: 500 KB
 	</p>
 	
 	<p>
@@ -96,9 +134,3 @@ Add a new photo to the Hotel: <%= @hotel.name %>
 	
 <% end %>
 <% end %>
-
-
-<%= link_to "Back", regresar %>
-
-<%= link_to 'Edit', edit_hotel_path(@hotel) %> |
-<%= link_to 'Back', hotels_path %>

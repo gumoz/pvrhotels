@@ -1,2 +1,35 @@
-<h1>Pvrhotels#index</h1>
-<p>Find me in app/views/pvrhotels/index.html.erb</p>
+<div id="col_izq">
+	<div id="window1">
+<% if !@hotels.blank? %>
+		<div id="title1"><p>Hotels Available:</p></div>
+<table cellspacing="1" cellpadding="1" id="tabla1">
+  <tr>
+    <th class="col1">Name</th>
+    <th class="col1">Plan</th>
+    <th class="col1">Stars</th>
+    <th class="col1">Best for</th>
+    <th class="col1">Location area</th>
+    <th class="col1">Status</th>
+    <th class="col1">Address</th>
+    <th class="col1">More Info</th>
+
+
+  </tr>
+
+<% for hotel in @hotels %>
+  <tr >
+	<td class="row1"><%=h hotel.name.capitalize %></td>
+	<td class="row1"><%=h hotel.hotel_plan %></td>
+	<td class="row1"><%=h hotel.hotel_stars %></td>
+	<td class="row1"><%=h hotel.best_for %></td>
+	<td class="row1"><%=h hotel.location_area %></td>
+	<td class="row1"><%=h hotel.hotel_status %></td>
+	<td class="row1"><%=h hotel.address1 %></td>
+	<td class="row1"><%= link_to "More Info", :controller => "pvrhotels", :action => "show", :id => hotel %></td>
+	
+  </tr>
+<% end %>
+</table></div></div>
+<% else %>
+<h2>There is not Hotel Registered yet.</h2>
+<% end %>

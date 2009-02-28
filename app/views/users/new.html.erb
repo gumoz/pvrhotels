@@ -1,22 +1,46 @@
-<h1>Sign up as a new user</h1>
+<div id="col_izq">
+	<div id="window1">
+		<div id="title1"><p>Sign up as a new user</p></div>
 <% @user.password = @user.password_confirmation = nil %>
 
 <%= error_messages_for :user %>
+
 <% form_for :user, :url => users_path do |f| -%>
-<p><%= label_tag 'login' %><br/>
-<%= f.text_field :login %></p>
+<div class="cuadros"><%= label_tag 'Login' %><br/>
+<%= f.text_field :login %></div>
 
-<p><%= label_tag 'email' %><br/>
-<%= f.text_field :email %></p>
+<div class="cuadros"><%= label_tag 'Email' %><br/>
+<%= f.text_field :email %></div>
 
-<p><%= label_tag "contraseña" %><br/>
-<%= f.password_field :password %></p>
+<div class="cuadros"><%= label_tag "Password" %><br/>
+<%= f.password_field :password %></div>
 
-<p><%= label_tag 'password_confirmation', "confirmar contraseña" %><br/>
-<%= f.password_field :password_confirmation %></p>
+<div class="cuadros"><%= label_tag 'password_confirmation', "Password confirmation" %><br/>
+<%= f.password_field :password_confirmation %></div>
 
-<p><%= submit_tag 'Sign up' %></p>
+<div class="clear"></div>
+<div class="fixbot"><%= submit_tag 'Sign up' %></div>
 <% end -%>
 
-<%= link_to 'Back', users_path %>
 <%= javascript_tag "$('user_login').focus()" %>
+</div>
+</div>
+
+<div id="col_der">
+	<div class="window2">
+		<div class="title2"><p>Property Administration:</p></div>
+		<ul>
+			<li><%= link_to "Admin Hotels", hotels_path %></li>
+			<li id="last2"><%= link_to "Add new hotel", new_hotel_path %></li>
+		</ul>
+	</div>
+	<br />
+	<% if (current_user.login == "admin" || (current_user.login == "superadmin")) %>
+	<div class="window2">
+		<div class="title2"><p>Users Administration:</p></div>
+		<ul>
+			<li id="last"><%= link_to 'View users', users_path %></li>
+		</ul>
+	</div>
+	<% end %>
+</div>
